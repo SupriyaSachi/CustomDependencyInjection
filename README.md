@@ -2,6 +2,7 @@
 CustomDependencyInjection is a small dependency injection (DI) library for java projects.
 
 How to run the app?
+
 In your main method call 'DIContext context = new DIContext().createContext(TestMain.class);'
 Get the bean using 'context.getServiceInstance(VehicleService.class);'
 
