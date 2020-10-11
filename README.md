@@ -7,6 +7,7 @@ Get the bean using 'context.getServiceInstance(VehicleService.class);'
 
 "
 	public static void main(String[] args) throws Exception {
+		
 		DIContext context = new DIContext().createContext(TestMain.class);
 		VehicleService vehicle = context.getServiceInstance(VehicleService.class);
     vehicle.service();
