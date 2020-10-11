@@ -20,6 +20,9 @@ Annotate your startup class with @Service
 Supported annotations by default:
 
 Service - Specify service.
+
 Inject - Specify which constructor will be used to create instance of a service. also you can annotate fields with this annotation.
+
 CustomQualifier - Specify the name of the dependency that you are requiring.
+
 CustomScope - Specify the scope of the service. SINGLETON or PROTOTYPE.
