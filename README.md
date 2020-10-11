@@ -26,3 +26,17 @@ Inject - Specify which constructor will be used to create instance of a service.
 CustomQualifier - Specify the name of the dependency that you are requiring.
 
 CustomScope - Specify the scope of the service. SINGLETON or PROTOTYPE.
+
+@Service
+@CustomScope(ScopeType.SINGLETON)
+public class VehicleService {
+	@CustomQualifier("carbean")
+	@Inject
+	private Vehicle vehicle;
+
+	   public void service() {
+	      vehicle.start();
+	      vehicle.stop();
+	   }
+
+}
